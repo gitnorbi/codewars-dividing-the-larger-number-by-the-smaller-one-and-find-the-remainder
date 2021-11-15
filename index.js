@@ -5,8 +5,7 @@ function remainder(a, b){
   let sortTheArguments=[a,b]
   sortTheArguments.sort(function(c, d){return d - c});
   result=sortTheArguments[0]%sortTheArguments[1];
-  console.log(result)
-  return result;
+  document.querySelector("#result").innerHTML=`The result is: ${result}`;
 }
 
 //example
